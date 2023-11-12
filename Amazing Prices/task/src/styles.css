@@ -144,12 +144,13 @@ h4 {
 }
 
 #comparison {
-  align-items: center;
+  /*align-items: center;*/
   display: flex;
   flex-direction: column;
   margin: 20px auto 100px auto;
   justify-content: center;
   width: 50%;
+  position: relative;
 }
 
 h2 {
@@ -157,7 +158,6 @@ h2 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 0;
   text-align: center;
 }
 
