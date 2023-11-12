@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -146,7 +148,8 @@ h4 {
   display: flex;
   flex-direction: column;
   margin: 20px auto 100px auto;
-  width: 480px;
+  justify-content: center;
+  width: 50%;
 }
 
 h2 {
@@ -164,13 +167,12 @@ table {
   background: #FFF;
   height: 230px;
   margin-top: 10px;
-  align-self: stretch;
 }
 
 th,
 td {
   border: 1px solid #000;
-  width: 120px;
+  width: 25%;
   min-height: 35px;
   flex-shrink: 0;
   padding-left: 5px;
@@ -180,4 +182,29 @@ td {
 thead {
   background: rgba(255, 255, 255, 0.00);
   height: 35px;
+}
+
+@media screen and (max-width: 825px){
+  .last-col {
+    width: 0;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #price-plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: 20vh;
+  }
 }
